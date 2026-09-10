@@ -11,21 +11,21 @@ This project combines deep Exploratory Data Analysis (EDA) in **Python** with an
 ### Page 1: Executive Overview & Macro Trends
 > Tracks high-level business performance, monthly revenue rhythm, customer order spending distribution, and unit price vs. profit margin correlation.
 
-![Executive Overview & Trends](assets/executive_overview.png)
+![Executive Overview & Trends](executive_overview.png)
 
 ---
 
 ### Page 2: Product & Channel Performance
 > Deep dives into revenue generators vs. margin drivers across sales channels (Wholesale, Distributor, Export) and highlights portfolio profitability.
 
-![Product and Channel Performance](assets/product_channel_performance.png)
+![Product and Channel Performance](product_channel_performance.png)
 
 ---
 
 ### Page 3: Geographic & Customer Insights
 > Breaks down regional volume vs. profitability (West, Midwest, South, Northeast), top-performing states, and enterprise client contributions.
 
-![Geographic and Customer Insights](assets/geographic_customer_insights.png)
+![Geographic and Customer Insights](geographic_customer_insights.png)
 
 ---
 
