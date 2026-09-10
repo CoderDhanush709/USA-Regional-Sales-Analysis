@@ -1,132 +1,69 @@
-# USA Regional Sales Analysis
+# 📊 USA Regional Sales Analytics & Executive Dashboard
 
-### End-to-End Sales Analytics Project | Python • Power BI
+An end-to-end business intelligence and sales performance project analyzing **64,000+ B2B transactions** totaling **$1.24 Billion in gross revenue** for Acme Co. across the United States. 
 
----
-
-## 📌 Project Overview
-
-This project analyzes **Acme Co.’s USA sales data (2014–2018)** to uncover revenue and profit drivers across products, channels, and regions.  
-
-The analysis includes data cleaning, exploratory data analysis (EDA), trend identification, customer & product performance evaluation, and the creation of an interactive **Power BI dashboard** to support data-driven business decisions.
+This project combines deep Exploratory Data Analysis (EDA) in **Python** with an interactive, 3-tier multi-page **Power BI Dashboard** to reveal regional market disparities, channel profitability, and seasonal purchasing cycles.
 
 ---
 
-## 🎯 Business Problem
+## 🖥️ Interactive Dashboard Showcase
 
-Sales teams lacked clear visibility into:
-- Regional performance differences
-- Seasonal trends and anomalies
-- Top-performing products and channels
-- Profitability vs. revenue concentration
+### Page 1: Executive Overview & Macro Trends
+> Tracks high-level business performance, monthly revenue rhythm, customer order spending distribution, and unit price vs. profit margin correlation.
 
-**Goal:** Identify growth opportunities, optimize pricing & promotions, and reduce performance concentration risk.
+![Executive Overview & Trends](assets/executive_overview.png)
 
 ---
 
-## 🛠️ Tools & Technologies
+### Page 2: Product & Channel Performance
+> Deep dives into revenue generators vs. margin drivers across sales channels (Wholesale, Distributor, Export) and highlights portfolio profitability.
 
-| Category              | Tools Used                          |
-|-----------------------|-------------------------------------|
-| Data Cleaning & EDA   | Python (Pandas, NumPy, Matplotlib, Seaborn) |
-| Data Visualization    | Power BI                            |
-| Data Source           | Excel (Multiple Sheets)             |
-| Presentation          | PowerPoint                          |
+![Product and Channel Performance](assets/product_channel_performance.png)
 
 ---
 
-## 📂 Project Structure
+### Page 3: Geographic & Customer Insights
+> Breaks down regional volume vs. profitability (West, Midwest, South, Northeast), top-performing states, and enterprise client contributions.
+
+![Geographic and Customer Insights](assets/geographic_customer_insights.png)
 
 ---
 
-## 🔄 Project Workflow
+## 📈 Key Performance Indicators (KPIs)
 
-1. **Data Ingestion** – Loaded multiple Excel sheets (Sales Orders, Customers, Products, Regions, Budgets)
-2. **Data Cleaning & Pre-processing**
-   - Merged multiple tables
-   - Standardized column names
-   - Created new features: `Profit`, `Profit Margin %`, Month, Year
-3. **Exploratory Data Analysis (EDA)**
-   - Univariate & Bivariate analysis
-   - Trend & seasonality analysis
-   - Outlier detection
-   - Correlation analysis
-   - Customer & product segmentation
-4. **Dashboard Development** – Built interactive Power BI dashboard
-5. **Business Recommendations** – Translated insights into actionable strategies
+| Metric | Overall Value | Key Business Note |
+| :--- | :--- | :--- |
+| **Total Revenue** | **$1.24 Billion** | Generated across Wholesale, Distributor, and Export routes |
+| **Total Gross Profit** | **$461.80 Million** | Represents a healthy aggregate profit baseline |
+| **Profit Margin %** | **37.36%** | Stable margin maintained across diverse pricing tiers |
+| **Total Order Count** | **64,000 Orders** | Distributed across 4 major US geographic regions |
+| **Average Revenue per Order** | **$19.30K** | Large B2B average basket size |
 
 ---
 
-## 📊 Key Insights
+## 💡 Core Business Insights
 
-- **Revenue Range:** Monthly revenue stayed mostly between **$23M – $26.5M**
-- **Top Products:** Product 26 and Product 25 are the highest revenue generators
-- **Channel Mix:**
-  - Wholesale → 54%
-  - Distributor → 31%
-  - Export → 15%
-- **Geographic Performance:** California is the strongest market (~$230M revenue)
-- **Seasonality:** Slight peak observed in May–June; noticeable dip in early 2017
-- **Margin Insight:** Profit margins range from ~18% to ~60% with no strong link to unit price
-
----
-
-## 💡 Business Recommendations
-
-1. **Focus on Top Products** – Double down on Product 26 & 25 while improving mid-tier products
-2. **Export Growth** – Increase investment in Export channel (higher margin potential)
-3. **Regional Strategy** – Replicate California’s success in other high-potential states
-4. **Seasonal Planning** – Optimize promotions around May–June peak and investigate 2017 anomaly
-5. **Margin Monitoring** – Flag low-margin high-volume orders for pricing review
+* **Channel Concentration vs. Margin Equivalence:**
+  * **Wholesale** is the primary revenue driver, contributing **54.06% ($668.20M)** of gross sales and **53.56% ($247.35M)** of total profit.
+  * **Distributor** generates **31.32% ($387.14M)**, while **Export** captures **14.61% ($180.63M)**.
+  * All three channels maintain nearly identical profit margins (**Export: 38.01%**, **Distributor: 37.65%**, **Wholesale: 37.02%**), proving pricing discipline across distribution partners.
+* **Geographic Market Disparities:**
+  * **California dominates the country**, generating **$228.79M (19.5% of total sales)**—more than double the second largest state (Illinois at $111.05M).
+  * Regionally, the **West ($372.1M, 30.1%)** and **South ($335.1M, 27.1%)** make up over **57%** of enterprise demand, while delivering consistent ~37.4% margins.
+* **Product Portfolio Dynamics:**
+  * **Revenue Champions:** `Product 26` ($120M) and `Product 25` ($110M) lead enterprise volume.
+  * **Margin Champions:** `Product 9` (40.0%), `Product 30` (39.1%), and `Product 28` (38.9%) lead operating efficiency.
+  * Scatter plot analysis reveals that profit margin is decoupled from unit price, demonstrating steady value-based pricing rather than margin erosion on expensive SKUs.
+* **Seasonality & Demand Pulses:**
+  * Sales volume experiences repeatable peaks in **May** and **September–December**, with a noticeable Q1 lull (hitting an annual trough in **February**).
 
 ---
 
-## 📈 Power BI Dashboard
+## 🛠️ Tech Stack & Workflow
 
-The interactive dashboard includes:
-
-- Performance Summary (KPIs)
-- Customer Segmentation
-- Revenue & Profit Analysis
-- Regional & Channel Breakdown
-- Product Performance
-
-**Dashboard File:** `SALES REPORT.pbix`
-
----
-
-## 🧠 Skills Demonstrated
-
-- Data Cleaning & Feature Engineering
-- Exploratory Data Analysis (EDA)
-- Trend & Seasonality Analysis
-- Customer & Product Segmentation
-- Business Insight Generation
-- Interactive Dashboard Design (Power BI)
-- Data Storytelling
-
----
-
-## 🚀 How to Run This Project
-
-1. Clone the repository
-2. Open the Jupyter Notebook (`EDA_Regional_Sales_Analysis.ipynb`) for EDA
-3. Open `SALES REPORT.pbix` in Power BI Desktop
-4. Review the PowerPoint presentation for business summary
-
----
-
-## ✍️ Author
-
-**Gadamsetti Dhanush Siva Raman**  
-Aspiring Data Analyst
-
-- [LinkedIn](https://linkedin.com/in/dhanushsivaraman)  
-- [GitHub](https://github.com/CoderDhanush709)  
-- Email: dhanushsivaraman8@gmail.com
-
----
-
-## 📌 Note
-
-This is a personal portfolio project created for learning and demonstration purposes using publicly available sample sales data.
+```text
+  Data Ingestion         Data Cleaning & EDA          Data Modeling & DAX        Executive Delivery
+┌─────────────────┐     ┌─────────────────────┐     ┌─────────────────────┐     ┌──────────────────┐
+│  Excel Sheets   │ ──> │ Python (Pandas/     │ ──> │ Power BI Desktop    │ ──> │ Power BI Report  │
+│ (Orders/Clients)│     │ NumPy/Seaborn)      │     │ (Star Schema / DAX) │     │ & PPT Pitch Deck │
+└─────────────────┘     └─────────────────────┘     └─────────────────────┘     └──────────────────┘
